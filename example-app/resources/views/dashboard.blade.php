@@ -53,8 +53,9 @@
                                 <div class="photo">
                                     <img src="../assets/img/anime3.png" alt="Profile Photo">
                                 </div>
-
-                                <b class="caret d-none d-lg-block d-xl-block"></b>
+                                <b class="caret d-none d-lg-block d-xl-block">
+                                    
+                                </b>
                                 <p class="d-lg-none">
                                     Log out
                                 </p>
