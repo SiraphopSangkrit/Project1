@@ -110,7 +110,7 @@
                 <div class="col-lg-4-course">
                     <div class="card card-chart">
                         <div class="card-header">
-                            <a href="./Course.html">SC30xxxxx</a>
+                            <a href="course">SC30xxxxx</a>
                         </div>
                         <div class="card-body">
                         </div>
@@ -119,7 +119,7 @@
                 <div class="col-lg-4-course">
                     <div class="card card-chart">
                         <div class="card-header">
-                            <a href="./Course.html">SC30xxxxx</a>
+                            <a href="course">SC30xxxxx</a>
                         </div>
                         <div class="card-body">
                         </div>
@@ -128,7 +128,7 @@
                 <div class="col-lg-4-course">
                     <div class="card card-chart">
                         <div class="card-header">
-                            <a href="./Course.html">SC30xxxxx</a>
+                            <a href="course">SC30xxxxx</a>
                         </div>
                         <div class="card-body">
                         </div>
