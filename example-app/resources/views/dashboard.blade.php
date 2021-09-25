@@ -107,39 +107,37 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4-course">
-                        <div class="card card-chart">
-                            <div class="card-header">
-                                <a href="./Course.html">SC30xxxxx</a>
-                            </div>
-                            <div class="card-body">
-                            </div>
+                <div class="col-lg-4-course">
+                    <div class="card card-chart">
+                        <div class="card-header">
+                            <a href="./Course.html">SC30xxxxx</a>
+                        </div>
+                        <div class="card-body">
                         </div>
                     </div>
-                    <div class="col-lg-4-course">
-                        <div class="card card-chart">
-                            <div class="card-header">
-                                <a href="./Course.html">SC30xxxxx</a>
-                            </div>
-                            <div class="card-body">
-                            </div>
+                </div>
+                <div class="col-lg-4-course">
+                    <div class="card card-chart">
+                        <div class="card-header">
+                            <a href="./Course.html">SC30xxxxx</a>
+                        </div>
+                        <div class="card-body">
                         </div>
                     </div>
-                    <div class="col-lg-4-course">
-                        <div class="card card-chart">
-                            <div class="card-header">
-                                <a href="./Course.html">SC30xxxxx</a>
-                            </div>
-                            <div class="card-body">
-                            </div>
+                </div>
+                <div class="col-lg-4-course">
+                    <div class="card card-chart">
+                        <div class="card-header">
+                            <a href="./Course.html">SC30xxxxx</a>
+                        </div>
+                        <div class="card-body">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    <footer class="footer">
-    </footer>
+        <footer class="footer">
+        </footer>
     </div>
     </div>
     <div class="fixed-plugin">
