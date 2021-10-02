@@ -47,100 +47,75 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navigation">
                     <ul class="navbar-nav ml-auto">
-                        <div class="Name">Siraphop Sangkrit</div>
-                        <li class="dropdown nav-item">
-                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                                <div class="photo">
-                                    <img src="../assets/img/anime3.png" alt="Profile Photo">
-                                </div>
-                                <b class="caret d-none d-lg-block d-xl-block">
+                        <div class="Name">
+                            {{ Auth::user()->name }}
+                            <button class="btn-round" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                             document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                            </button>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                class="d-none">
+                                @csrf
+                            </form>
+                        </div>
 
-                                </b>
-                                <p class="d-lg-none">
-                                    Log out
-                                </p>
-                            </a>
-                            <ul class="dropdown-menu dropdown-navbar">
-                                <li class="nav-link"><a href="javascript:void(0)"
-                                        class="nav-item dropdown-item">Profile</a></li>
-                                <li class="nav-link"><a href="javascript:void(0)"
-                                        class="nav-item dropdown-item">Settings</a></li>
-                                <li class="dropdown-divider"></li>
-                                <li class="nav-link"><a href="javascript:void(0)"
-                                        class="nav-item dropdown-item">Log out</a></li>
-                            </ul>
-                        </li>
-                        <li class="separator d-lg-none"></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="modal modal-search fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="SEARCH">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <i class="tim-icons icon-simple-remove"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Navbar -->
-        <div class="content">
-            <div class="row">
-                <div class="col-12">
-                    <div class="card card-chart">
-                        <div class="card-header ">
-                            <div class="row">
-                                <div class="col-sm-6 text-left">
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
-                                    </div>
+    <!-- End Navbar -->
+    <div class="content">
+        <div class="row">
+            <div class="col-12">
+                <div class="card card-chart">
+                    <div class="card-header ">
+                        <div class="row">
+                            <div class="col-sm-6 text-left">
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <div class="Course-lable">Your Course</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4-course">
-                    <div class="card card-chart">
-                        <div class="card-header">
-                            <a href="course">SC30xxxxx</a>
                         </div>
                         <div class="card-body">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4-course">
-                    <div class="card card-chart">
-                        <div class="card-header">
-                            <a href="course">SC30xxxxx</a>
-                        </div>
-                        <div class="card-body">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4-course">
-                    <div class="card card-chart">
-                        <div class="card-header">
-                            <a href="course">SC30xxxxx</a>
-                        </div>
-                        <div class="card-body">
+                            <div class="Course-lable">Your Course</div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-lg-4-course">
+                <div class="card card-chart">
+                    <div class="card-header">
+                        <a href="course">SC30xxxxx</a>
+                    </div>
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4-course">
+                <div class="card card-chart">
+                    <div class="card-header">
+                        <a href="course">SC30xxxxx</a>
+                    </div>
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4-course">
+                <div class="card card-chart">
+                    <div class="card-header">
+                        <a href="course">SC30xxxxx</a>
+                    </div>
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
         </div>
-        <footer class="footer">
-        </footer>
     </div>
     </div>
+    </div>
+    <footer class="footer">
+    </footer>
     <div class="fixed-plugin">
         <div class="dropdown show-dropdown">
             <a href="#" data-toggle="dropdown">
