@@ -89,10 +89,11 @@
                                                 <div class="modal-body">
 
                                                     <button type="submit" class="btn btn-primary"
-                                                        data-dismiss="modal">Student
+                                                        data-dismiss="modal">
                                                         {{ __('Register') }}
                                                     </button>
-                                                    <button type="submit" class="btn btn-primary">Teacher
+                                                    <button type="submit" class="btn btn-primary"
+                                                        data-dismiss="modal">
                                                         {{ __('Register') }}
                                                     </button>
                                                 </div>
