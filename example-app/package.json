@@ -30,10 +30,11 @@
         "sass": "^1.32.11",
         "sass-loader": "^11.0.1",
         "tailwindcss": "^2.0.1",
-        "vue": "^3.0.5",
+        "vue": "^3.2.20",
         "vue-loader": "^16.1.2"
     },
     "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.4",
         "admin-lte": "^3.1.0"
     }
 }

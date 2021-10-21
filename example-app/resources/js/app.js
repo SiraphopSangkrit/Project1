@@ -17,3 +17,9 @@ const appName = window.document.getElementsByTagName('title')[0] ? innerText || 
     });
 
 InertiaProgress.init({ color: '#4B5563' });
+
+window.Vue = require('vue');
+
+const app = new Vue({
+    el: '#app',
+});
