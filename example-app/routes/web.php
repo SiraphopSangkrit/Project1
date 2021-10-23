@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CourseController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 
@@ -21,6 +22,9 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', [HomeController::class, 'dashboard'])->name('dashboard');
-Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
-Route::get('admin/home', [HomeController::class, 'adminhome'])->name('admin.home')->middleware('is_admin');
-Route::get('/course', [HomeController::class, 'course'])->name('course');
+
+
+Route::group( ['middleware' => ['auth']], function() {
+    Route::resource('course', 'CourseController');
+
+});

@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Entities\User;
 use Illuminate\Http\Request;
+use LMS\Modules\Courses\Repositories\Contracts\CourseRepositoryInterface;
 
 class HomeController extends Controller
 {
@@ -19,18 +21,14 @@ class HomeController extends Controller
     /**
      * Show the application dashboard.
      *
+     * @param CourseRepositoryInterface $courseRepository
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function adminHome()
+
+    public function dashboard(CourseRepositoryInterface $courseRepository)
     {
-        return view('adminHome');
-    }
-    public function dashboard()
-    {
-        return view('dashboard');
-    }
-    public function course()
-    {
-        return view('course');
+        $course = $courseRepository->allAvailable();
+
+        return view('dashboard', compact('course'));
     }
 }
